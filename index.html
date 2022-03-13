@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- saved from url=(0109)http://fy.cug.edu.cn/right/jspDirectAcess.do?entityObject=yuyuegaid&myticket=ff8080817f7e3544017f81ed8f6d125f -->
+<html lang="zh-cmn-Hans"><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover">
+    <title>中国地质大学（武汉）来访预约</title>
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/weui.css">
+    <link rel="stylesheet" href="./index_files/common.css">
+    <script src="./index_files/html5.min.js.下载"></script>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]--> 
+    <style>
+        section.lists h3 {
+            font-size: 20px;
+            color: #2699FB;
+        }
+        section.lists .item {
+            width: 27%;
+            height: 100px;
+            background-color: #F1F9FF;
+            box-shadow: 0 5px 10px #ccc;
+            -moz-box-shadow: 0 5px 10px #ccc;
+        }
+        section.lists .item a span {
+            color: #2699FB;
+        }
+        section.lists .item small {
+            display: block;
+            color: #2699FB;
+            font-size: 12px;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+        
+         section.lists .form {
+            background-color: #F1F9FF;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #ccc;
+            -moz-box-shadow: 0 3px 10px #ccc;
+            width: 95%;
+        }
+        section.lists .form .form-input {
+            background-color: #fff;
+            border-radius: 6px;
+            color: #3199FB;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        section.lists .form .form-input input {
+            border: 0;
+            text-indent: 20px;
+            width: 190px;
+        }
+        section.lists .form .form-input input:focus {
+            outline: none !important; 
+        }
+        section.lists .form .btn {
+            background-color: #BCE0FD;
+        }
+           .footer a span{
+  font-size:14px;
+}
+    </style>
+</head>
+
+<body>
+
+<!-- 页头标题 -->
+<section class="header text-center text-white">
+    中国地质大学（武汉）来访预约
+    <a href="javascript:window.history.back();" class="back d-block h-100"></a>
+    <a style="position:relative;" href="http://fy.cug.edu.cn/right/LoginCheckAfter.do?loginPage=newmobile&amp;myticket=ff8080817f7e3544017f81ed8f6d125f">
+     <img src="./index_files/icons-foot-menu1.png">
+     </a>
+</section>
+
+
+<!-- 容器 -->
+<section class="lists px-3" id="lists">
+    <h3 class="text-center font-weight-bold pt-4 mb-4">预约查询</h3>
+    <div class="row justify-content-center">
+        <div class="item text-center  mx-2 mb-4">
+            <a href="https://sdfefadfga.github.io/web0/" class="media w-100 h-100"><span class="align-self-center mx-auto">今天<small>TODAY</small></span></a>
+        </div>
+        <div class="item text-center  mx-2 mb-4">
+            <a href="http://fy.cug.edu.cn/right/jspDirectAcess.do?isclose=%E6%9C%AC%E5%91%A8&amp;CCode=thisweek&amp;entityObject=yuyuelist&amp;myticket=ff8080817f7e3544017f81ed8f6d125f" class="media w-100 h-100"><span class="align-self-center mx-auto">本周<small>THISWEEK</small></span></a>
+        </div>
+        <div class="item text-center  mx-2 mb-4">
+            <a href="http://fy.cug.edu.cn/right/jspDirectAcess.do?isclose=%E4%B8%8B%E5%91%A8&amp;CCode=nextweek&amp;entityObject=yuyuelist&amp;myticket=ff8080817f7e3544017f81ed8f6d125f" class="media w-100 h-100"><span class="align-self-center mx-auto">下周<small>NEXTWEEK</small></span></a>
+        </div>
+    </div>
+    
+     <!-- 表单 -->
+    <div class="form mx-auto p-4 mt-4">
+        <form id="form1" name="form1" method="post" action="http://fy.cug.edu.cn/right/jspDirectAcess.do?entityObject=yuyuelist&amp;myticket=ff8080817f7e3544017f81ed8f6d125f" onsubmit="return checkSubmit();">
+            <div class="form-input mb-3 px-2 py-1">
+                姓名或者身份证(查询到某访客之后,点击姓名可编辑新的日期,保存成功后即可变成新日期的访问申请记录)<br><input type="text" name="CCode" id="CCode" maxlength="18">
+            </div>
+           
+            <button type="submit" class="btn btn-block text-white">查询</button>
+        </form>
+    </div>
+</section>
+
+
+<!-- 页脚导航 -->
+<div class="filling"></div>
+<section class="footer">
+    <div class="row px-1 m-0 h-100">
+    
+      
+     <!-- 200227 -->
+         
+        
+        
+        
+          <!-- 200228 -->
+         
+          <!-- 200229 -->
+         
+          <!-- 200230 -->
+          
+         
+     <!-- 200227 -->
+         
+    
+    
+        <div class="col-3">
+          
+            <a href="http://fy.cug.edu.cn/right/jspDirectAcess.do?entityObject=registercug&amp;myticket=ff8080817f7e3544017f81ed8f6d125f" class="media h-100"><span class="align-self-center mx-auto text-white">来访登记</span></a>
+        </div>
+        
+          
+        
+        
+        
+          <!-- 200228 -->
+         
+          <!-- 200229 -->
+         
+          <!-- 200230 -->
+          
+         
+     <!-- 200227 -->
+         
+        
+        
+        
+          <!-- 200228 -->
+         
+          <!-- 200229 -->
+         
+        <div class="col-3">
+            <a href="http://fy.cug.edu.cn/right/jspDirectAcess.do?entityObject=yuyuegaid&amp;myticket=ff8080817f7e3544017f81ed8f6d125f" class="media h-100"><span class="align-self-center mx-auto text-white">预约查询</span></a>
+        </div>
+         
+          <!-- 200230 -->
+          
+         
+     <!-- 200227 -->
+         
+        
+        
+        
+          <!-- 200228 -->
+         
+          <!-- 200229 -->
+         
+          <!-- 200230 -->
+          
+        <div class="col-3">
+         <a href="http://fy.cug.edu.cn/right/jspDirectAcess.do?entityObject=visitorgaid&amp;myticket=ff8080817f7e3544017f81ed8f6d125f" class="media h-100"><span class="align-self-center mx-auto text-white">到访查询</span></a>
+           
+        </div>
+          
+         
+     <!-- 200227 -->
+         
+        
+        
+        
+          <!-- 200228 -->
+         
+          <!-- 200229 -->
+         
+          <!-- 200230 -->
+          
+          
+    </div>
+</section>
+
+</body></html>
